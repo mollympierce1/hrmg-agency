@@ -3,21 +3,30 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="intro">
+    <h1> We develop comprehensive digital marketing strategies. </h1>
+    <h3> We build websites and stuff that set you up to succeed online. </h3>
+    <div height="30px;" style="font-size: 30px; line-height: 30px"> &nbsp; </div>
+    <a href="#" class="button-white">Let's get started.</a>
+  </div>
+  <div height="60px;" style="font-size: 60px; line-height: 60px"> &nbsp; </div>
+    <div>
+        <h4>At Hi-Res Media Group, we craft custom digital marketing strategies that work for your business. Your customers have individual digital habitats, and we’re here to help identify and navigate the channels that reach them to bring them to your door.</h4>
+        <div height="30px;" style="font-size: 30px; line-height: 30px"> &nbsp; </div>
+    <div style="float:left; width:30%; margin: 0px 20px 0px 0px;">
+        <h3>Branding</h5>
+        <p>Get noticed and remembered for exactly who are. Strong branding and thoughtful graphic design communicates who you are and what you believe, instantly.</p>
+    </div>
+  <div style="float:left; width:30%; margin: 0px 0px 0px 20px;">
+    <h3>Web Design</h5>
+    <p>What does your website do for you? The most important tool in your digital marketing arsenal, a strategically designed website is engineered to attract visitors and turn them into customers.</p>
+  </div>
+  <div style="float:left; width:30%; margin: 0px 0px 0px 20px;">
+    <h3>Digital Marketing</h5>
+    <p>Build your website and then put it to work. Digital marketing begins when your digital tools are in your hand, and connects you to people who want what you have.</p>
+  </div>
+  <div style="width:100%;float:left;text-align:center;">
+    <div height="30px;" style="font-size: 30px; line-height: 30px"> &nbsp; </div>
+    <a href="#" class="button-white">What We Do</a>
+  </div>
 </div>
