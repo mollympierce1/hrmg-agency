@@ -1,6 +1,6 @@
 ---
+permalink: "/home/"
 layout: page
-permalink: /home/
 ---
 
 # We develop comprehensive digital marketing strategies.
