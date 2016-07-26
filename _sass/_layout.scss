@@ -5,6 +5,9 @@
   /*  border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light; */
     min-height: 56px;
+    max-width: 1600px;
+    margin-left:20px;
+    margin-right:20px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -100,6 +103,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: #000;
 }
 
 .footer-heading {
@@ -195,30 +199,26 @@
 }
 
 .intro {
-  padding-top: 200px;
+  padding-top: 15%;
 }
 
 .featured-work {
   background: url(https://www.hrmg.agency/wp-content/uploads/2016/06/Mock3-compressor.jpg);
   background-size:cover;
-  clear: both;
-  margin-top:30px;
-  padding: 20px;
 }
 
 .featured-work-card {
   background-color:#e9e9e9;
-  padding:20px;
+  margin: 8% 30% 8% 8%;
   color: black;
-  margin-right: 30%;
+  padding:5%;
 }
 
 .row {
     position: relative;
-    max-width: 1050px;
-    max-width: 95rem;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1600px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -229,6 +229,17 @@
     padding-left: 16px;
     padding-right: 16px;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width:600px) {
+    .row {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 
@@ -237,7 +248,19 @@
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    text-align: left
+    text-align: left;
+    margin:auto;
+}
+
+@media (max-width:600px) {
+    .columns-12 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin:auto;
+    }
 }
 
 .columns-6 {
@@ -245,37 +268,44 @@
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%
+    max-width: 50%;
 }
 
-@media (min-width:600px) {
+@media (max-width:600px) {
     .columns-6 {
         -webkit-box-flex: 0;
-        -webkit-flex: 0 0 50%;
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin:auto;
     }
 }
 
 .columns-4 {
-    -webkit-box-flex: 0
+    -webkit-box-flex: 0;
     -webkit-flex: 0 0 30%;
     -ms-flex: 0 0 30%;
     flex: 0 0 30%;
-    max-width: 30%
+    max-width: 30%;
 }
 
-@media (min-width:600px) {
+@media (max-width:600px) {
     .columns-4 {
         -webkit-box-flex: 0;
-        -webkit-flex: 0 0 30%;
-        -ms-flex: 0 0 30%;
-        flex: 0 0 30%;
-        max-width: 30%;
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin:auto;
     }
 }
 
+@media (max-width:600px) {
+    .team {
+        text-align: center;
+    }
+}
 
 .absolute--small {
     position: absolute
@@ -285,6 +315,18 @@
     .absolute--small {
         position: relative
     }
+}
+
+
+.home {
+  background: rgba(243,108,32,1);
+  background: -moz-linear-gradient(top, rgba(243,108,32,1) 0%, rgba(219,57,103,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,108,32,1)), color-stop(100%, rgba(219,57,103,1)));
+  background: -webkit-linear-gradient(top, rgba(243,108,32,1) 0%, rgba(219,57,103,1) 100%);
+  background: -o-linear-gradient(top, rgba(243,108,32,1) 0%, rgba(219,57,103,1) 100%);
+  background: -ms-linear-gradient(top, rgba(243,108,32,1) 0%, rgba(219,57,103,1) 100%);
+  background: linear-gradient(to bottom, rgba(243,108,32,1) 0%, rgba(219,57,103,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f36c20', endColorstr='#db3967', GradientType=0 );
 }
 
 /**
@@ -347,4 +389,48 @@ margin: 30px 0px 30px 0px;
 border: 2px white solid;
 }
 
-/* Lines */
+
+.button-orange
+{color: #f37c20;
+text-transform: uppercase;
+font-size: 0.8em;
+text-decoration: none;
+padding: 10px;
+margin: 30px 0px 30px 0px;
+border: 2px white solid;
+}
+
+
+
+
+
+
+
+.tilt {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.tilt__back,
+.tilt__front {
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tilt__back {
+	position: relative;
+}
+
+.tilt__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
